@@ -1,4 +1,6 @@
 # wom_n3
-para que este script funcione debe ser creada en primer lugar una instancia de composer en gcp, luego de eso crear un bucket en cloud storage donde se debe depositar el archivo CSV.
-Posteriomente se debe crear un dataset en bigquery que se utilizara como repositorio de la data que se procesara del archivo CSV
-Posteriormente se debe dejar el script de python en el bucket que se creo al momento de generar la instancia de composer, eso gatillara la ejecución del pipeline de composer y las tablas de Bigquery seran cargadas.
+1) Crear una instancia de composer
+2) Crear un bucket de google cloud storage y depositar el archivo .csv que sera cargado posteriormente en Bigquery
+3) Crear un dataset en bigquery para depositar la información del archivo CSV
+4) Cargar el script de python en el bucket que se creo al momento de iniciar la instancia de composer
+5) Se deben modificar rutas del archivo python para que este pueda ser utilizado en otro proyecto de GCP, principalmente el nombre del bucket donde sera depositado el archivo .csv
